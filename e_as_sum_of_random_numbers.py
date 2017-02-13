@@ -1,5 +1,5 @@
 # Created by Amey Saware
-# Version 0.0
+
 
 """
 In the book "The Simpsons and their mathematical secrets" Simon Singh states that if you generate random numbers and add them, the average of numbers required for the sum to exceed 1 tends to e as number of trials tends to infinity.
@@ -30,14 +30,14 @@ def mctest(num_trials):
 	Runs the specified number of trials and prints the output of the average result
 	"""
 
-	result = []
+	result = 0
 
-	for trial in range(num_trials):
-		result.append(mctrial())
 
-#	print result
-#	print sum(result)
-	print float(sum(result))/num_trials
+	for test in range(num_trials):
+		testnum = test + 1
+		result = float(test*result + mctrial())/testnum
+	print result
 
 	pass
 
+mctest(100000000)
