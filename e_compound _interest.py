@@ -8,9 +8,14 @@ This program can be uses this fact to generate values of e.
 def comp_int(period):
 
 	rate = float(1)/period
+	value = 1
 
-	print (1+rate)**period
+	for tick in range(period):
+		value *= (1 + rate)
+		pass
 
+	print value
+		
 	pass
 
-comp_int(10000000000000)
+comp_int(100000000)
