@@ -41,4 +41,3 @@ def mctest(num_trials):
 
 	pass
 
-mctest(int(10E6))
