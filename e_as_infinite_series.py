@@ -17,9 +17,9 @@ def taylor(num):
     """
     sum = float(0)
     for term in range(num):
-        sum += float(1)/fact(num)
+        sum += float(1)/fact(term)
         pass
     print sum
     pass
 
-taylor(4)
+taylor(100)
